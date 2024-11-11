@@ -9,7 +9,6 @@ export default function Home() {
       <DotHeroSection />
       <ExperienceSection />
       <SkillsSection />
-
       <ProjectsSection />
     </div>
   );

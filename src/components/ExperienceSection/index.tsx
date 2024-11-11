@@ -6,7 +6,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 const ExperienceSection = () => {
   return (
-    <div className="flex container-main max-w-3xl  min-h-0 flex-col gap-y-3 py-20">
+    <div className="flex container-main max-w-3xl  min-h-0 flex-col gap-y-3 pt-20 pb-10">
       <BlurFade delay={BLUR_FADE_DELAY * 5}>
         <h2 className="text-xl font-bold">Work Experience</h2>
       </BlurFade>

@@ -38,6 +38,8 @@ export const ResumeCard = ({
     }
   };
 
+  console.log(href);
+
   return (
     <Link
       href={href || "#"}
