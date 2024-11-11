@@ -22,6 +22,8 @@ export const DATA = {
     "Docker",
     "AWS",
     "C++",
+    "Shopify",
+    "Framer",
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
@@ -51,14 +53,14 @@ export const DATA = {
 
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
+      company: "Devx Commerce",
+      href: "https://devxcommerce.com/",
       badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      location: "Surat, Gujarat India",
+      title: "Software Development Engineer",
+      logoUrl: "/devx_logo.jpeg",
+      start: "August 2024",
+      end: "Present",
       description:
         "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
     },
