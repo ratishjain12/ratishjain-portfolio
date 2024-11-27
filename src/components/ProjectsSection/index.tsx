@@ -9,12 +9,14 @@ const ProjectsSection = () => {
       <BlurFade delay={BLUR_FADE_DELAY * 11}>
         <div className="flex flex-col justify-center space-y-4 ">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-foreground text-background font-[700] px-3 py-1 text-sm">
+            <div className="inline-block rounded-lg bg-orange-500 text-white font-[700] px-3 py-1 text-sm">
               My Projects
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-              Check out my latest work
-            </h2>
+            <h1 className=" text-2xl md:text-4xl  font-black mb-4">
+              <span className="text-orange-500">{`{ `}</span>
+              Checkout my latest work
+              <span className="text-orange-500">{` }`}</span>
+            </h1>
             <p className="text-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               I&apos;ve worked on a variety of projects, from simple websites to
               complex web applications. Here are a few of my favorites.
