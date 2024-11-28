@@ -92,7 +92,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://coldmail-io.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
