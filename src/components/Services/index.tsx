@@ -1,14 +1,13 @@
 "use client";
-
-import { ChevronDown } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
+
 import PulsatingButton from "../ui/pulsating-button";
+import { useRouter } from "next/navigation";
 
 const services = [
   {
@@ -38,10 +37,11 @@ const services = [
 ];
 
 export default function ServicesSection() {
+  const router = useRouter();
   return (
     <section className=" bg-background dark:text-white">
       <div className=" mx-auto py-20">
-        <h1 className="container-main text-2xl text-center sm:text-4xl md:text-5xl  font-black mb-10">
+        <h1 className="container-main text-xl text-center sm:text-4xl md:text-5xl  font-black mb-10">
           <span className="text-orange-500">{`{ `}</span>
           CRAFT YOUR DIGITAL EDGE
           <span className="text-orange-500">{` }`}</span>
@@ -68,6 +68,9 @@ export default function ServicesSection() {
                 <div className="pl-10  space-y-4">
                   <p>{service.description}</p>
                   <PulsatingButton
+                    onClick={() =>
+                      router.push("https://calendly.com/ratishjain6/30min")
+                    }
                     color="bg-gradient-to-r from-orange-400 to-orange-500"
                     className="dark:text-white "
                   >

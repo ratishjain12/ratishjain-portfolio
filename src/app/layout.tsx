@@ -11,6 +11,7 @@ const mulish = Mulish({
 
 export const metadata: Metadata = {
   title: "Ratish Jain Portfolio",
+  description: "portfolio of ratish jain",
 };
 
 export default function RootLayout({
@@ -19,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={`${mulish.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider>

@@ -12,7 +12,7 @@ const ProjectsSection = () => {
             <div className="inline-block rounded-lg bg-orange-500 text-white font-[700] px-3 py-1 text-sm">
               My Projects
             </div>
-            <h1 className=" text-2xl md:text-4xl  font-black mb-4">
+            <h1 className=" text-xl sm:text-2xl md:text-4xl  font-black mb-4">
               <span className="text-orange-500">{`{ `}</span>
               Checkout my latest work
               <span className="text-orange-500">{` }`}</span>
@@ -38,7 +38,6 @@ const ProjectsSection = () => {
               dates={project.dates}
               tags={project.technologies}
               image={project.image}
-              video={project.video}
               links={project.links}
             />
           </BlurFade>

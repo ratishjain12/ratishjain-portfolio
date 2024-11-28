@@ -1,8 +1,8 @@
-import { cn } from "@/lib/utils";
-import { DotPattern } from "@/components/ui/dot-pattern";
+"use client";
 import IconCloud from "../ui/icon-cloud";
 import BlurFade from "../ui/blur-fade";
 import PulsatingButton from "@/components/ui/pulsating-button";
+import { useRouter } from "next/navigation";
 const slugs = [
   "typescript",
   "javascript",
@@ -39,6 +39,7 @@ const slugs = [
 const BLUR_FADE_DELAY = 0.04;
 
 export function DotHeroSection() {
+  const router = useRouter();
   return (
     <div>
       <div className="relative bg-orange-400 p-1 flex items-center overflow-x-hidden">
@@ -74,6 +75,9 @@ export function DotHeroSection() {
           </div>
           <div className="mt-4">
             <PulsatingButton
+              onClick={() =>
+                router.push("https://calendly.com/ratishjain6/30min")
+              }
               color="bg-gradient-to-r from-orange-400 to-orange-500"
               className="dark:text-white "
             >

@@ -5,7 +5,7 @@ import { DATA } from "@/data/resume";
 const BLUR_FADE_DELAY = 0.04;
 const SkillsSection = () => {
   return (
-    <div className="container-main">
+    <div className="container-main my-6">
       <div className="flex min-h-0 flex-col gap-y-3">
         <BlurFade delay={BLUR_FADE_DELAY * 9}>
           <h1 className=" text-2xl md:text-4xl  font-black mb-4">

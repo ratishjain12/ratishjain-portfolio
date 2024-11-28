@@ -1,5 +1,6 @@
 import { DotHeroSection } from "@/components/DotHeroSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import Footer from "@/components/Footer";
 import ProjectsSection from "@/components/ProjectsSection";
 import ServicesSection from "@/components/Services";
 import SkillsSection from "@/components/SkillsSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <ExperienceSection />
       <SkillsSection />
       <ProjectsSection />
+      <Footer />
     </div>
   );
 }
