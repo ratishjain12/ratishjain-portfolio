@@ -92,7 +92,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://coldmail-io.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -165,6 +165,28 @@ export const DATA = {
       ],
       image:
         "https://res.cloudinary.com/ratishjaininc/image/upload/v1732795339/career-ai_sq5fts.png",
+    },
+    {
+      title: "Hyper Chat",
+      href: "https://hyper-chat-rag.vercel.app/",
+      dates: "Jan 2025 - Jan 2025",
+      description:
+        "Turn Any Webpage Into a Conversation—Ask, Explore, and Discover Instantly!",
+      technologies: ["Next.js", "Upstash", "Typescript", "Redis"],
+      links: [
+        {
+          type: "Website",
+          href: "https://hyper-chat-rag.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ratishjain12/HyperChat",
+          icon: <Github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/ratishjaininc/image/upload/v1739095538/117shots_so_bet9ke.png",
     },
   ],
 } as const;

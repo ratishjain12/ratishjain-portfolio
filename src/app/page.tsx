@@ -11,7 +11,6 @@ export default function Home() {
       <DotHeroSection />
       <ServicesSection />
       <ExperienceSection />
-      <SkillsSection />
       <ProjectsSection />
       <Footer />
     </div>
