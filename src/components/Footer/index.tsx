@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="w-full">
       {/* Footer Content */}
-      <div className="bg-[#FDF6EC] dark:bg-[#2A2A2A] py-8 pb-32 px-4 sm:px-6 lg:px-8 text-gray-800 dark:text-gray-200">
+      <div className="bg-[#FDF6EC] dark:bg-[#2A2A2A] py-8 pb-32 container-main text-gray-800 dark:text-gray-200">
         <div className="container mx-auto">
           <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-8">
             {/* Left Side - Name/Brand */}
