@@ -13,9 +13,6 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-8">
             {/* Left Side - Name/Brand */}
             <div className="space-y-4 text-center sm:text-left">
-              <h3 className="text-xl sm:text-2xl font-mono font-bold text-[#FF6B00]">
-                RATISH JAIN
-              </h3>
               <p className="text-sm max-w-md text-gray-600 dark:text-gray-400">
                 "Crafting digital experiences with code, turning complex
                 problems into elegant solutions, one pixel at a time."

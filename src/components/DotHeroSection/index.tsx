@@ -1,7 +1,7 @@
 "use client";
-import IconCloud from "../ui/icon-cloud";
 import BlurFade from "../ui/blur-fade";
 import PulsatingButton from "@/components/ui/pulsating-button";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 const slugs = [
   "typescript",
@@ -56,7 +56,7 @@ export function DotHeroSection() {
             })}
         </div>
       </div>
-      <div className="relative container-main pt-[90px] md:pt-0 flex flex-col md:flex-row  w-full items-center justify-between overflow-hidden rounded-lg   ">
+      <div className=" mt-4 relative container-main pt-[90px] md:pt-0 flex flex-col md:flex-row  w-full items-center justify-between gap-6 overflow-hidden rounded-lg   ">
         <BlurFade delay={BLUR_FADE_DELAY} className=" relative">
           <div className="flex flex-col gap-[10px]">
             <p className=" whitespace-pre-wrap  text-3xl sm:text-4xl lg:text-6xl tracking-tight font-[800] dark:text-white">
@@ -87,7 +87,15 @@ export function DotHeroSection() {
         </BlurFade>
 
         <div className="w-[70%] md:w-[50%] lg:w-[40%]">
-          <IconCloud iconSlugs={slugs} />
+          <Image
+            src="/profile.jpg"
+            alt="profile"
+            width={400}
+            height={400}
+            priority
+            quality={100}
+            className="rounded-full"
+          />
         </div>
 
         {/* <DotPattern
