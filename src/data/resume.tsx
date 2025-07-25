@@ -102,7 +102,7 @@ export const DATA = {
         },
       ],
       image:
-        "https://res.cloudinary.com/ratishjaininc/image/upload/v1732793719/coldmail_ivzkkf.png",
+        "https://res.cloudinary.com/ratishjaininc/image/upload/v1732793719/samples/people/coldmail_ivzkkf.png",
     },
     {
       title: "Notely.ai",
@@ -123,7 +123,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://notely-ai.vercel.app/",
+          href: "https://www.notely-ai.ratishfolio.com/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -133,38 +133,7 @@ export const DATA = {
         },
       ],
       image:
-        "https://res.cloudinary.com/ratishjaininc/image/upload/v1732793719/notely.ai_gnat8v.png",
-    },
-    {
-      title: "Career AI",
-      href: "https://career-ai-project.vercel.app/",
-      dates: "July 2024 - October 2024",
-      description:
-        "From resume creation to interview simulation, we've got you covered",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "Strapi",
-        "AWS S3",
-        "AWS Bedrock",
-        "AWS Lambda",
-        "Tensorflow",
-        "Shadcn UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://career-ai-project.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ratishjain12/resume-parser-frontend",
-          icon: <Github className="size-3" />,
-        },
-      ],
-      image:
-        "https://res.cloudinary.com/ratishjaininc/image/upload/v1732795339/career-ai_sq5fts.png",
+        "https://res.cloudinary.com/ratishjaininc/image/upload/v1732793719/samples/people/notely.ai_gnat8v.png",
     },
     {
       title: "Hyper Chat",
@@ -186,7 +155,7 @@ export const DATA = {
         },
       ],
       image:
-        "https://res.cloudinary.com/ratishjaininc/image/upload/v1739095538/117shots_so_bet9ke.png",
+        "https://res.cloudinary.com/ratishjaininc/image/upload/v1739095538/samples/people/117shots_so_bet9ke.png",
     },
   ],
 } as const;
