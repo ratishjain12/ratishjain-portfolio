@@ -45,7 +45,7 @@ const services = [
 export default function ServicesSection() {
   return (
     <section className="bg-background">
-      <div className="mx-auto py-20">
+      <div className="mx-auto py-10 md:py-20">
         <h1 className="container-main text-xl text-center sm:text-4xl md:text-5xl font-black mb-10 text-foreground">
           <span className="text-orange-500">{`{ `}</span>
           CRAFT YOUR DIGITAL EDGE
@@ -78,8 +78,8 @@ export default function ServicesSection() {
                     rel="noopener noreferrer"
                   >
                     <PulsatingButton
-                      color="bg-gradient-to-r from-orange-400 to-orange-500"
-                      className="text-white"
+                      color="bg-gradient-to-rfrom-orange-400 to-orange-500"
+                      className="text-white mt-4"
                     >
                       Book a Call
                     </PulsatingButton>

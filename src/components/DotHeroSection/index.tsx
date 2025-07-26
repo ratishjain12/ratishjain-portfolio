@@ -22,7 +22,7 @@ export function DotHeroSection() {
             })}
         </div>
       </div>
-      <div className=" mt-4 relative container-main pt-[90px] md:pt-0 flex flex-col md:flex-row  w-full items-center justify-between gap-6 overflow-hidden rounded-lg   ">
+      <div className=" mt-4 relative container-main pt-[50px] md:pt-0 flex flex-col md:flex-row w-full items-center justify-between gap-6 overflow-hidden rounded-lg">
         <BlurFade delay={BLUR_FADE_DELAY} className=" relative">
           <div className="flex flex-col gap-[10px]">
             <p className=" whitespace-pre-wrap  text-3xl sm:text-4xl lg:text-6xl tracking-tight font-[800] dark:text-white">

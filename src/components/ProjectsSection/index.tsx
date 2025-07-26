@@ -5,7 +5,7 @@ import { ProjectCard } from "../ProjectCard";
 const BLUR_FADE_DELAY = 0.04;
 const ProjectsSection = () => {
   return (
-    <div className="container-main flex flex-col gap-[30px] lg:py-[73px]">
+    <div className="container-main flex flex-col gap-[30px] py-[30px] lg:py-[73px]">
       <BlurFade delay={BLUR_FADE_DELAY * 11}>
         <div className="flex flex-col justify-center space-y-4 ">
           <div className="space-y-2 sm:text-center">
