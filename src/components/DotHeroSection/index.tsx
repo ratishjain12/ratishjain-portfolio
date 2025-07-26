@@ -1,45 +1,11 @@
-"use client";
 import BlurFade from "../ui/blur-fade";
 import PulsatingButton from "@/components/ui/pulsating-button";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-const slugs = [
-  "typescript",
-  "javascript",
-  "dart",
-  "java",
-  "react",
-  "flutter",
-  "android",
-  "html5",
-  "css3",
-  "nodedotjs",
-  "express",
-  "nextdotjs",
-  "prisma",
-  "amazonaws",
-  "postgresql",
-  "firebase",
-  "nginx",
-  "vercel",
-  "testinglibrary",
-  "jest",
-  "cypress",
-  "docker",
-  "git",
-  "jira",
-  "github",
-  "gitlab",
-  "visualstudiocode",
-  "androidstudio",
-  "sonarqube",
-  "figma",
-];
+import Link from "next/link";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export function DotHeroSection() {
-  const router = useRouter();
   return (
     <div>
       <div className="relative bg-orange-400 p-1 flex items-center overflow-x-hidden">
@@ -69,20 +35,24 @@ export function DotHeroSection() {
               Software Engineer & Freelancer
             </p>
             <p className="whitespace-pre-wrap max-w-[360px] lg:max-w-[540px]  font-light text-black dark:text-white">
-              From UI/UX mockups to full-stack development, I ensure seamless
-              user experiences.
+              Building scalable cloud-native applications with modern
+              technologies. From serverless APIs to AI-driven solutions, I
+              deliver production-ready systems.
             </p>
           </div>
           <div className="mt-4">
-            <PulsatingButton
-              onClick={() =>
-                router.push("https://calendly.com/ratishjain6/30min")
-              }
-              color="bg-gradient-to-r from-orange-400 to-orange-500"
-              className="dark:text-white "
+            <Link
+              href="https://calendly.com/ratishjain6/30min"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Book a Call
-            </PulsatingButton>
+              <PulsatingButton
+                color="bg-gradient-to-r from-orange-400 to-orange-500"
+                className="dark:text-white"
+              >
+                Book a Call
+              </PulsatingButton>
+            </Link>
           </div>
         </BlurFade>
 
@@ -97,12 +67,6 @@ export function DotHeroSection() {
             className="rounded-full"
           />
         </div>
-
-        {/* <DotPattern
-        className={cn(
-          "[mask-image:radial-gradient(350px_circle_at_top,white,transparent)] md:[mask-image:radial-gradient(600px_circle_at_left,white,transparent)] lg:[mask-image:radial-gradient(1000px_circle_at_left,white,transparent)]"
-        )}
-      /> */}
       </div>
     </div>
   );

@@ -43,31 +43,46 @@ export const ResumeCard = ({
   return (
     <Link
       href={href || "#"}
-      className="block cursor-pointer"
+      className="block cursor-pointer transition-transform hover:scale-[1.02] duration-200"
       onClick={handleClick}
     >
-      <Card className="flex border border-orange-500 px-0">
-        <div className="py-6">
-          <Avatar className="border size-12 ml-4  bg-muted-background dark:bg-foreground">
+      <Card className="flex flex-col sm:flex-row border border-orange-500/50 hover:border-orange-500 transition-colors duration-200 shadow-sm hover:shadow-md">
+        <div className="flex justify-center sm:justify-start p-4 sm:p-6 sm:pr-0">
+          <Avatar className="border size-12 sm:size-14 md:size-16 bg-muted-background dark:bg-foreground shadow-sm">
             <AvatarImage
               src={logoUrl}
               alt={altText}
-              className="object-contain"
+              className="object-contain p-1"
             />
-            <AvatarFallback>{altText[0]}</AvatarFallback>
+            <AvatarFallback className="text-sm font-semibold">
+              {altText[0]}
+            </AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex-grow  items-center flex-col group">
-          <CardHeader>
-            <div className="flex items-center justify-between gap-x-4 text-base">
-              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
-                {title}
+
+        <div className="flex-grow flex flex-col group">
+          <CardHeader className="pb-3 sm:pb-4">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-x-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-x-3">
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold leading-none text-sm sm:text-base md:text-lg text-foreground">
+                    {title}
+                  </h3>
+                  {description && (
+                    <ChevronRightIcon
+                      className={cn(
+                        "size-4 text-muted-foreground transform transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:text-orange-500",
+                        isExpanded ? "rotate-90 text-orange-500" : "rotate-0"
+                      )}
+                    />
+                  )}
+                </div>
                 {badges && (
-                  <span className="inline-flex gap-x-1">
+                  <span className="flex flex-wrap gap-1 sm:gap-2">
                     {badges.map((badge, index) => (
                       <Badge
                         variant="secondary"
-                        className="align-middle text-xs"
+                        className="text-xs px-2 py-1 bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300 border-orange-200 dark:border-orange-800"
                         key={index}
                       >
                         {badge}
@@ -75,37 +90,37 @@ export const ResumeCard = ({
                     ))}
                   </span>
                 )}
-                <ChevronRightIcon
-                  className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                    isExpanded ? "rotate-90" : "rotate-0"
-                  )}
-                />
-              </h3>
-              <div className="text-xs sm:text-sm tabular-nums whitespace-nowrap text-muted-foreground text-right">
+              </div>
+              <div className="text-xs sm:text-sm tabular-nums text-muted-foreground sm:text-right font-medium">
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+            {subtitle && (
+              <div className="font-medium text-sm sm:text-base text-muted-foreground mt-1">
+                {subtitle}
+              </div>
+            )}
           </CardHeader>
+
           {description && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
-                duration: 0.7,
+                duration: 0.5,
                 ease: [0.16, 1, 0.3, 1],
               }}
               className={cn(
-                "mt-2 text-xs sm:text-sm px-6",
-                isExpanded && "pb-6"
+                "px-4 sm:px-6 pb-4 sm:pb-6",
+                isExpanded && "border-t border-border/50"
               )}
             >
-              {description}
+              <div className="text-sm sm:text-base leading-relaxed text-muted-foreground">
+                {description}
+              </div>
             </motion.div>
           )}
         </div>

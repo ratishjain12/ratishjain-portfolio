@@ -7,41 +7,46 @@ import {
 } from "@/components/ui/accordion";
 
 import PulsatingButton from "../ui/pulsating-button";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const services = [
   {
     id: "1",
-    title: "FULLSTACK DEV",
+    title: "CLOUD",
     description:
-      "End-to-end web application development using modern technologies like React, Node.js, and cloud services. Building scalable, responsive, and performant applications that deliver exceptional user experiences.",
+      "Cloud-native architecture and infrastructure solutions using AWS services. Building scalable, serverless applications with Lambda, API Gateway, DynamoDB, and SAM. Implementing secure, production-ready systems with containerization and microservices architecture.",
   },
   {
     id: "2",
-    title: "UI/UX",
+    title: "FULLSTACK",
     description:
-      "Creating intuitive and engaging user interfaces with a focus on user experience. From wireframes to final designs, ensuring your digital products are both beautiful and functional.",
+      "End-to-end web application development using modern technologies like Next.js, React, Node.js, and Python. Building scalable, responsive, and performant applications with GraphQL, Strapi CMS, and comprehensive testing frameworks.",
   },
   {
     id: "3",
-    title: "WEB3",
+    title: "AI & AUTOMATION",
     description:
-      "Blockchain development and Web3 integration services. Smart contracts, DApps, and cryptocurrency solutions built with security and scalability in mind.",
+      "Leveraging artificial intelligence and automation to streamline business processes. Custom AI solutions, chatbots, automated workflows, and AI-driven PoCs that evolve into production features. Implementing intelligent systems that drive efficiency and innovation.",
   },
   {
     id: "4",
-    title: "AI & AUTOMATION",
+    title: "CONSULTING",
     description:
-      "Leveraging artificial intelligence and automation to streamline business processes. Custom AI solutions, chatbots, and automated workflows that drive efficiency.",
+      "Technical consulting and architecture guidance for startups and enterprises. Code reviews, performance optimization, security audits, and technology stack recommendations. Helping teams scale their development processes and adopt best practices.",
+  },
+  {
+    id: "5",
+    title: "NO-CODE WEBSITES",
+    description:
+      "Rapid website development using no-code and low-code platforms. Building professional websites, landing pages, and web applications without traditional coding. Fast deployment and easy maintenance for businesses looking to establish their online presence quickly.",
   },
 ];
 
 export default function ServicesSection() {
-  const router = useRouter();
   return (
-    <section className=" bg-background dark:text-white">
-      <div className=" mx-auto py-20">
-        <h1 className="container-main text-xl text-center sm:text-4xl md:text-5xl  font-black mb-10">
+    <section className="bg-background">
+      <div className="mx-auto py-20">
+        <h1 className="container-main text-xl text-center sm:text-4xl md:text-5xl font-black mb-10 text-foreground">
           <span className="text-orange-500">{`{ `}</span>
           CRAFT YOUR DIGITAL EDGE
           <span className="text-orange-500">{` }`}</span>
@@ -64,18 +69,21 @@ export default function ServicesSection() {
                   </span>
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="bg-orange-400/60 dark:bg-orange-500/10 px-6 md:px-8 py-6 text-base md:text-lg">
-                <div className="pl-10  space-y-4">
-                  <p>{service.description}</p>
-                  <PulsatingButton
-                    onClick={() =>
-                      router.push("https://calendly.com/ratishjain6/30min")
-                    }
-                    color="bg-gradient-to-r from-orange-400 to-orange-500"
-                    className="dark:text-white "
+              <AccordionContent className="bg-orange-50 dark:bg-orange-500/10 px-6 md:px-8 py-6 text-base md:text-lg text-foreground">
+                <div className="pl-10 space-y-4">
+                  <p className="text-muted-foreground">{service.description}</p>
+                  <Link
+                    href="https://calendly.com/ratishjain6/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    Book a Call
-                  </PulsatingButton>
+                    <PulsatingButton
+                      color="bg-gradient-to-r from-orange-400 to-orange-500"
+                      className="text-white"
+                    >
+                      Book a Call
+                    </PulsatingButton>
+                  </Link>
                 </div>
               </AccordionContent>
             </AccordionItem>

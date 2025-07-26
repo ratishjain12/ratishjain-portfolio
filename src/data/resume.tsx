@@ -52,14 +52,26 @@ export const DATA = {
     {
       company: "Devx Commerce",
       href: "https://devxcommerce.com/",
-      badges: [],
+      badges: ["SDE-1"],
+      location: "Surat, Gujarat India",
+      title: "Software Development Engineer",
+      logoUrl: "/devx_logo.jpeg",
+      start: "November 2024",
+      end: "Present",
+      description:
+        "Built scalable, production-ready systems for both D2C brands and enterprise clients. My work focused on full-stack development with a strong emphasis on backend & cloud technologies. Designed and implemented cloud-native architectures using AWS services such as SAM, Lambda, API Gateway, and DynamoDB. I also contributed to AI-integrated features, internal tooling, and continuously improved development practices around testing, deployment automation, and observability.",
+    },
+    {
+      company: "Devx Commerce",
+      href: "https://devxcommerce.com/",
+      badges: ["JUNIOR SDE"],
       location: "Surat, Gujarat India",
       title: "Software Development Engineer",
       logoUrl: "/devx_logo.jpeg",
       start: "August 2024",
-      end: "Present",
+      end: "November 2024",
       description:
-        "Led development of enterprise-scale applications, architecting an end-to-end serverless solution using AWS services (ECS, DynamoDB, Lambda) and Docker containerization with Python, and building full-stack e-commerce platforms for D2C brands. Engineered modern web solutions using Next.js, Tailwind CSS, and Strapi CMS, while implementing secure user authentication through AWS Cognito. Demonstrated expertise in cloud-native development and container orchestration, delivering scalable and high-performance applications that serve thousands of daily users.",
+        "Led development of full-stack projects with minimal supervision, delivering both internal tools and client-facing solutions. Built serverless APIs and data pipelines using AWS SAM, Lambda, DynamoDB, Python, and Node.js. Developed secure, production-ready systems for enterprise clients, including automated verification workflows. Created AI-driven PoCs for D2C brands, some of which evolved into live features. Worked with Next.js, GraphQL, and Strapi to build scalable, responsive frontend.",
     },
   ],
   education: [
@@ -83,9 +95,9 @@ export const DATA = {
         "Next.js",
         "Typescript",
         "Mongo DB",
-        "Next Auth",
+        "Better Auth",
         "TailwindCSS",
-        "PhonePe Payment",
+        "Razorpay Payment",
         "Shadcn UI",
         "Groq AI",
       ],
@@ -135,27 +147,27 @@ export const DATA = {
       image:
         "https://res.cloudinary.com/ratishjaininc/image/upload/v1732793719/samples/people/notely.ai_gnat8v.png",
     },
-    {
-      title: "Hyper Chat",
-      href: "https://hyper-chat-rag.vercel.app/",
-      dates: "Jan 2025 - Jan 2025",
-      description:
-        "Turn Any Webpage Into a Conversation—Ask, Explore, and Discover Instantly!",
-      technologies: ["Next.js", "Upstash", "Typescript", "Redis"],
-      links: [
-        {
-          type: "Website",
-          href: "https://hyper-chat-rag.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ratishjain12/HyperChat",
-          icon: <Github className="size-3" />,
-        },
-      ],
-      image:
-        "https://res.cloudinary.com/ratishjaininc/image/upload/v1739095538/samples/people/117shots_so_bet9ke.png",
-    },
+    // {
+    //   title: "Hyper Chat",
+    //   href: "https://hyper-chat-rag.vercel.app/",
+    //   dates: "Jan 2025 - Jan 2025",
+    //   description:
+    //     "Turn Any Webpage Into a Conversation—Ask, Explore, and Discover Instantly!",
+    //   technologies: ["Next.js", "Upstash", "Typescript", "Redis"],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://hyper-chat-rag.vercel.app/",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/ratishjain12/HyperChat",
+    //       icon: <Github className="size-3" />,
+    //     },
+    //   ],
+    //   image:
+    //     "https://res.cloudinary.com/ratishjaininc/image/upload/v1739095538/samples/people/117shots_so_bet9ke.png",
+    // },
   ],
 } as const;
