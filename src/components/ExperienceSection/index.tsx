@@ -6,7 +6,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 const ExperienceSection = () => {
   return (
-    <section className="w-full py-8 md:py-12 lg:py-16 bg-gradient-to-br from-orange-50/30 via-background to-orange-50/20 dark:from-background dark:via-background dark:to-background">
+    <section className="w-full py-8 md:py-10 lg:py-16 bg-gradient-to-br from-orange-50/30 via-background to-orange-50/20 dark:from-background dark:via-background dark:to-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <BlurFade delay={BLUR_FADE_DELAY * 5}>
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-6 md:mb-8 text-center md:text-left text-foreground">

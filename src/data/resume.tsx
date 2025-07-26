@@ -50,7 +50,7 @@ export const DATA = {
 
   work: [
     {
-      company: "Devx Commerce",
+      company: "devx",
       href: "https://devxcommerce.com/",
       badges: ["SDE-1"],
       location: "Surat, Gujarat India",
@@ -62,7 +62,7 @@ export const DATA = {
         "Built scalable, production-ready systems for both D2C brands and enterprise clients. My work focused on full-stack development with a strong emphasis on backend & cloud technologies. Designed and implemented cloud-native architectures using AWS services such as SAM, Lambda, API Gateway, and DynamoDB. I also contributed to AI-integrated features, internal tooling, and continuously improved development practices around testing, deployment automation, and observability.",
     },
     {
-      company: "Devx Commerce",
+      company: "devx",
       href: "https://devxcommerce.com/",
       badges: ["JUNIOR SDE"],
       location: "Surat, Gujarat India",

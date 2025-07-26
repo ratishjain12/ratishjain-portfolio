@@ -114,11 +114,11 @@ export const ResumeCard = ({
                 ease: [0.16, 1, 0.3, 1],
               }}
               className={cn(
-                "px-4 sm:px-6 pb-4 sm:pb-6",
+                "px-6 pb-4 sm:pb-6",
                 isExpanded && "border-t border-border/50"
               )}
             >
-              <div className="text-sm sm:text-base leading-relaxed text-muted-foreground">
+              <div className="text-sm mt-1 sm:text-base leading-relaxed text-muted-foreground">
                 {description}
               </div>
             </motion.div>
