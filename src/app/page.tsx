@@ -1,15 +1,12 @@
-import { DotHeroSection } from "@/components/DotHeroSection";
+import HeroSection from "@/components/HeroSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import Footer from "@/components/Footer";
 import ProjectsSection from "@/components/ProjectsSection";
-import ServicesSection from "@/components/Services";
-import SkillsSection from "@/components/SkillsSection";
 
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <DotHeroSection />
-      <ServicesSection />
+      <HeroSection />
       <ExperienceSection />
       <ProjectsSection />
       <Footer />

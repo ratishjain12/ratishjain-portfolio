@@ -38,16 +38,14 @@ export const ResumeCard = ({
     }
   };
 
-  console.log(href);
-
   return (
     <Link
       href={href || "#"}
       className="block cursor-pointer transition-transform hover:scale-[1.02] duration-200"
       onClick={handleClick}
     >
-      <Card className="flex flex-col sm:flex-row border border-orange-500/50 hover:border-orange-500 transition-colors duration-200 shadow-sm hover:shadow-md">
-        <div className="flex justify-center sm:justify-start p-4 sm:p-6 sm:pr-0">
+      <Card className="flex flex-row border border-orange-500/50 hover:border-orange-500 transition-colors duration-200 shadow-sm hover:shadow-md">
+        <div className="flex items-center justify-start p-3 sm:p-4 sm:pr-0">
           <Avatar className="border size-12 sm:size-14 md:size-16 bg-muted-background dark:bg-foreground shadow-sm">
             <AvatarImage
               src={logoUrl}
@@ -61,9 +59,9 @@ export const ResumeCard = ({
         </div>
 
         <div className="flex-grow flex flex-col group">
-          <CardHeader className="pb-3 sm:pb-4">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-x-4">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-x-3">
+          <CardHeader className="pb-2 sm:pb-3">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-x-3">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-x-2">
                 <div className="flex items-center gap-2">
                   <h3 className="font-semibold leading-none text-sm sm:text-base md:text-lg text-foreground">
                     {title}
@@ -114,11 +112,11 @@ export const ResumeCard = ({
                 ease: [0.16, 1, 0.3, 1],
               }}
               className={cn(
-                "px-6 pb-4 sm:pb-6",
+                "px-4 pb-3 sm:pb-4",
                 isExpanded && "border-t border-border/50"
               )}
             >
-              <div className="text-sm mt-1 sm:text-base leading-relaxed text-muted-foreground">
+              <div className="text-sm mt-0.5 sm:text-base leading-relaxed text-muted-foreground">
                 {description}
               </div>
             </motion.div>

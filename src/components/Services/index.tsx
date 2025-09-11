@@ -45,7 +45,7 @@ const services = [
 export default function ServicesSection() {
   return (
     <section className="bg-background">
-      <div className="mx-auto py-10 md:py-20">
+      <div className="mx-auto py-8 md:py-12 lg:py-16">
         <h1 className="container-main text-xl text-center sm:text-4xl md:text-5xl font-black mb-10 text-foreground">
           <span className="text-orange-500">{`{ `}</span>
           CRAFT YOUR DIGITAL EDGE
