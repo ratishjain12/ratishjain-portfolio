@@ -1,14 +1,11 @@
 "use client";
 import Link from "next/link";
-import PulsatingButton from "../ui/pulsating-button";
-import { useRouter } from "next/navigation";
 
 export default function Footer() {
-  const router = useRouter();
   return (
     <footer className="w-full">
       {/* Footer Content */}
-      <div className="bg-[#FDF6EC] dark:bg-[#2A2A2A] pt-8 md:pt-12 lg:pt-16 pb-20 text-gray-800 dark:text-gray-200">
+      <div className="bg-[#FDF6EC] dark:bg-[#2A2A2A] pt-8 md:pt-12 lg:pt-16 pb-32 text-gray-800 dark:text-gray-200">
         <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-8">
             {/* Left Side - Name/Brand */}

@@ -1,5 +1,5 @@
 import { Icons } from "@/components/Icons";
-import { Github, HomeIcon, NotebookIcon } from "lucide-react";
+import { Github, HomeIcon } from "lucide-react";
 
 export const DATA = {
   location: "San Francisco, CA",
@@ -74,17 +74,84 @@ export const DATA = {
         "Led development of full-stack projects with minimal supervision, delivering both internal tools and client-facing solutions. Built serverless APIs and data pipelines using AWS SAM, Lambda, DynamoDB, Python, and Node.js. Developed secure, production-ready systems for enterprise clients, including automated verification workflows. Created AI-driven PoCs for D2C brands, some of which evolved into live features. Worked with Next.js, GraphQL, and Strapi to build scalable, responsive frontend.",
     },
   ],
-  education: [
-    {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
-    },
-  ],
   projects: [
+    {
+      title: "Appgen",
+      href: "https://www.appgen-cli.com/",
+      description:
+        "A fast, flexible CLI tool to scaffold modern web app projects (Next.js, React, Express, Flask, and more) with optional TypeScript and Tailwind support, perfect for rapid prototyping and consistent project setup",
+      technologies: ["Python", "Rich", "Typer"],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.appgen-cli.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ratishjain12/appgen",
+          icon: <Github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/ratishjaininc/image/upload/v1757696349/appgen-ss_v4fldm.png",
+      video:
+        "https://res.cloudinary.com/ratishjaininc/video/upload/v1757696514/appgen-1755346121329_plroew.mp4",
+    },
+    {
+      title: "LeetCode Helper",
+      href: "https://github.com/ratishjain12/lc-helper",
+      description:
+        "lc-helper is a browser extension designed to streamline and enhance the LeetCode problem-solving experience. It adds useful helper features and UI improvements to make practicing coding puzzles more efficient and user-friendly.",
+      technologies: ["Javascript", "Gemini"],
+      links: [
+        // {
+        //   type: "Website",
+        //   href: "https://www.appgen-cli.com/",
+        //   icon: <Icons.globe className="size-3" />,
+        // },
+        {
+          type: "Source",
+          href: "https://github.com/ratishjain12/lc-helper",
+          icon: <Github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/ratishjaininc/image/upload/v1757696349/appgen-ss_v4fldm.png",
+      video:
+        "https://res.cloudinary.com/ratishjaininc/video/upload/v1757697142/leetcode-helper-1755431637398_orc79n.mp4",
+    },
+    {
+      title: "Notely.ai",
+      href: "https://notely-ai.vercel.app/",
+      description:
+        "Transform your PDFs into interactive knowledge. Ask questions, get instant answers, and unlock insights with Notely.ai.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "Convex DB",
+        "Langchain",
+        "Clerk",
+        "TailwindCSS",
+        "Stripe",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.notely-ai.ratishfolio.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ratishjain12/Notely.ai",
+          icon: <Github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/ratishjaininc/image/upload/v1732793719/samples/people/notely.ai_gnat8v.png",
+      video: null,
+    },
     {
       title: "Coldmail.io",
       href: "https://coldmail-io.vercel.app/",
@@ -115,59 +182,7 @@ export const DATA = {
       ],
       image:
         "https://res.cloudinary.com/ratishjaininc/image/upload/v1732793719/samples/people/coldmail_ivzkkf.png",
+      video: null,
     },
-    {
-      title: "Notely.ai",
-      href: "https://notely-ai.vercel.app/",
-      dates: "November 2024",
-      description:
-        "Transform your PDFs into interactive knowledge. Ask questions, get instant answers, and unlock insights with Notely.ai.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "Convex DB",
-        "Langchain",
-        "Clerk",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://www.notely-ai.ratishfolio.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ratishjain12/Notely.ai",
-          icon: <Github className="size-3" />,
-        },
-      ],
-      image:
-        "https://res.cloudinary.com/ratishjaininc/image/upload/v1732793719/samples/people/notely.ai_gnat8v.png",
-    },
-    // {
-    //   title: "Hyper Chat",
-    //   href: "https://hyper-chat-rag.vercel.app/",
-    //   dates: "Jan 2025 - Jan 2025",
-    //   description:
-    //     "Turn Any Webpage Into a Conversation—Ask, Explore, and Discover Instantly!",
-    //   technologies: ["Next.js", "Upstash", "Typescript", "Redis"],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://hyper-chat-rag.vercel.app/",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/ratishjain12/HyperChat",
-    //       icon: <Github className="size-3" />,
-    //     },
-    //   ],
-    //   image:
-    //     "https://res.cloudinary.com/ratishjaininc/image/upload/v1739095538/samples/people/117shots_so_bet9ke.png",
-    // },
   ],
 } as const;
