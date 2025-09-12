@@ -2,12 +2,6 @@ import { Icons } from "@/components/Icons";
 import { Github, HomeIcon } from "lucide-react";
 
 export const DATA = {
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
-  summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/me.png",
   skills: [
     "React",
@@ -72,6 +66,28 @@ export const DATA = {
       end: "November 2024",
       description:
         "Led development of full-stack projects with minimal supervision, delivering both internal tools and client-facing solutions. Built serverless APIs and data pipelines using AWS SAM, Lambda, DynamoDB, Python, and Node.js. Developed secure, production-ready systems for enterprise clients, including automated verification workflows. Created AI-driven PoCs for D2C brands, some of which evolved into live features. Worked with Next.js, GraphQL, and Strapi to build scalable, responsive frontend.",
+    },
+  ],
+  certifications: [
+    {
+      title: "AWS Certified Cloud Practitioner",
+      issuer: "Amazon Web Services",
+      href: "https://www.credly.com/badges/c2bd98f0-a8ac-4359-b309-f0fe8cb28bc1/public_url",
+      logoUrl: "/certifications/cloud-practitioner.png",
+      date: "March 2025",
+      credentialId: "AWS-CLF-C02",
+      description:
+        "Validates foundational understanding of AWS Cloud concepts, services, and security. Able to identify essential AWS services necessary to set up AWS-focused projects.",
+    },
+    {
+      title: "AWS Certified AI Practitioner",
+      issuer: "Amazon Web Services",
+      href: "https://www.credly.com/badges/85fa2592-f065-437e-9c4d-3b1d83391947/public_url",
+      logoUrl: "/certifications/ai-practitioner.png",
+      date: "August 2025",
+      credentialId: "AWS-AIF-C01",
+      description:
+        "Determine the correct types of AI/ML technologies to apply to specific use cases and know how to use AI, ML, and generative AI technologies responsibly.",
     },
   ],
   projects: [

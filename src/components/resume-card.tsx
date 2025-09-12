@@ -31,7 +31,9 @@ export const ResumeCard = ({
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  const handleLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
     if (description) {
       e.preventDefault();
       setIsExpanded(!isExpanded);
@@ -42,7 +44,7 @@ export const ResumeCard = ({
     <Link
       href={href || "#"}
       className="block cursor-pointer transition-transform hover:scale-[1.02] duration-200"
-      onClick={handleClick}
+      onClick={handleLinkClick}
     >
       <Card className="flex flex-row border border-orange-500/50 hover:border-orange-500 transition-colors duration-200 shadow-sm hover:shadow-md">
         <div className="flex items-center justify-start p-3 sm:p-4 sm:pr-0">
@@ -62,7 +64,10 @@ export const ResumeCard = ({
           <CardHeader className="pb-2 sm:pb-3">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-x-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-x-2">
-                <div className="flex items-center gap-2">
+                <Link
+                  href={href || "#"}
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                >
                   <h3 className="font-semibold leading-none text-sm sm:text-base md:text-lg text-foreground">
                     {title}
                   </h3>
@@ -74,7 +79,7 @@ export const ResumeCard = ({
                       )}
                     />
                   )}
-                </div>
+                </Link>
                 {badges && (
                   <span className="flex flex-wrap gap-1 sm:gap-2">
                     {badges.map((badge, index) => (

@@ -20,9 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${mulish.className} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+        >
           <TooltipProvider>
             {children}
             <Navbar />
