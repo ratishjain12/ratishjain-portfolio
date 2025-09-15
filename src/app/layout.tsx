@@ -4,6 +4,7 @@ import { Mulish } from "@next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
+import Script from "next/script";
 const mulish = Mulish({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -21,6 +22,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          defer
+          data-domain="ratishfolio.com"
+          src="https://analytics-code.vercel.app/tracking-script.js"
+        />
+      </head>
       <body className={`${mulish.className} antialiased`}>
         <ThemeProvider
           attribute="class"
