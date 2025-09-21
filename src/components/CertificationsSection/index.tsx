@@ -1,6 +1,6 @@
 import { DATA } from "@/data/resume";
 import BlurFade from "../ui/blur-fade";
-import { ResumeCard } from "../resume-card";
+import { ResumeCard } from "../ResumeCard";
 
 const BLUR_FADE_DELAY = 0.04;
 

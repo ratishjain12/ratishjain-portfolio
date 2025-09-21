@@ -31,12 +31,18 @@ export const ResumeCard = ({
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
-  const handleLinkClick = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-  ) => {
+  const handleCardClick = () => {
     if (description) {
-      e.preventDefault();
       setIsExpanded(!isExpanded);
+    } else if (href) {
+      window.open(href, "_blank", "noopener,noreferrer");
+    }
+  };
+
+  const handleTitleClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (href) {
+      window.open(href, "_blank", "noopener,noreferrer");
     }
   };
 
@@ -44,9 +50,9 @@ export const ResumeCard = ({
     <Link
       href={href || "#"}
       className="block cursor-pointer transition-transform hover:scale-[1.02] duration-200"
-      onClick={handleLinkClick}
+      onClick={handleCardClick}
     >
-      <Card className="flex flex-row border border-orange-500/50 hover:border-orange-500 transition-colors duration-200 shadow-sm hover:shadow-md">
+      <Card className="flex flex-row border transition-colors duration-200 shadow-sm hover:shadow-md">
         <div className="flex items-center justify-start p-3 sm:p-4 sm:pr-0">
           <Avatar className="border size-12 sm:size-14 md:size-16 bg-muted-background dark:bg-foreground shadow-sm">
             <AvatarImage
@@ -64,9 +70,9 @@ export const ResumeCard = ({
           <CardHeader className="pb-2 sm:pb-3">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-x-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-x-2">
-                <Link
-                  href={href || "#"}
-                  className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                <button
+                  onClick={handleTitleClick}
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity text-left"
                 >
                   <h3 className="font-semibold leading-none text-sm sm:text-base md:text-lg text-foreground">
                     {title}
@@ -79,7 +85,7 @@ export const ResumeCard = ({
                       )}
                     />
                   )}
-                </Link>
+                </button>
                 {badges && (
                   <span className="flex flex-wrap gap-1 sm:gap-2">
                     {badges.map((badge, index) => (

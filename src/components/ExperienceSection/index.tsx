@@ -1,10 +1,10 @@
 import { DATA } from "@/data/resume";
 import BlurFade from "../ui/blur-fade";
-import { ResumeCard } from "../resume-card";
+import { ResumeCard } from "../ResumeCard";
 
 const BLUR_FADE_DELAY = 0.04;
 
-const ExperienceSection = () => {
+export default function ExperienceSection() {
   return (
     <section className="w-full py-8 md:py-12 lg:py-16 bg-gradient-to-br from-orange-50/30 via-background to-orange-50/20 dark:from-background dark:via-background dark:to-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
@@ -30,7 +30,6 @@ const ExperienceSection = () => {
                 href={work.href}
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
               />
             </BlurFade>
           ))}
@@ -38,5 +37,4 @@ const ExperienceSection = () => {
       </div>
     </section>
   );
-};
-export default ExperienceSection;
+}
