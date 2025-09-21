@@ -18,6 +18,12 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Ratish Jain Portfolio",
   description: "portfolio of ratish jain",
+  openGraph: {
+    title: "Ratish Jain - Software Engineer & Cloud Architect",
+    description:
+      "Experienced Software Engineer specializing in cloud-native applications",
+    images: ["/profile.jpg"],
+  },
 };
 
 export default function RootLayout({
