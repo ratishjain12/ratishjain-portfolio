@@ -58,7 +58,7 @@ export const DATA = {
     {
       company: "devx",
       href: "https://devxcommerce.com/",
-      badges: ["JUNIOR SDE"],
+      badges: ["Junior SDE"],
       location: "Surat, Gujarat India",
       title: "Software Development Engineer",
       logoUrl: "/devx_logo.jpeg",

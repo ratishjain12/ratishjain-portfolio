@@ -28,7 +28,7 @@ export default function HeroSection() {
           </div>
           <div className="mt-4">
             <Link
-              href="https://calendly.com/ratishjain6/30min"
+              href="https://cal.com/ratish-jain/30min"
               target="_blank"
               rel="noopener noreferrer"
             >
