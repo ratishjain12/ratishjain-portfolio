@@ -35,6 +35,10 @@ export default function RootLayout({
           data-domain="ratishfolio.com"
           src="https://analytics-code.vercel.app/tracking-script.js"
         />
+         <Script
+          src="https://bharatgo-customer-chatbot.vercel.app/embed.js"
+          strategy="lazyOnload"
+        />
       </head>
       <body className={`${poppins.className} antialiased`}>
         <ThemeProvider
