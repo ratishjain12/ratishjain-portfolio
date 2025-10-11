@@ -29,13 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <Script
-          defer
-          data-domain="ratishfolio.com"
-          src="https://analytics-code.vercel.app/tracking-script.js"
-        />
-      </head>
+
       <body className={`${poppins.className} antialiased`}>
         <ThemeProvider
           attribute="class"
