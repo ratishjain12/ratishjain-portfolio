@@ -70,6 +70,16 @@ export const DATA = {
   ],
   certifications: [
     {
+      title: "AWS Certified Solutions Architect - Associate",
+      issuer: "Amazon Web Services",
+      href: "https://www.credly.com/badges/36c01ea7-149c-481a-915b-c9e86db40934/public_url",
+      logoUrl: "/certifications/solutions-architect.png",
+      date: "November 2025",
+      credentialId: "AWS-SAA-C03",
+      description:
+        "ability to build secure and robust solutions using architectural design principles based on customer requirements. ",
+    },
+    {
       title: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
       href: "https://www.credly.com/badges/c2bd98f0-a8ac-4359-b309-f0fe8cb28bc1/public_url",

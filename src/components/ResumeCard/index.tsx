@@ -6,7 +6,6 @@ import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 
 interface ResumeCardProps {
@@ -31,7 +30,8 @@ export const ResumeCard = ({
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
-  const handleCardClick = () => {
+  const handleCardClick = (e: React.MouseEvent) => {
+    e.preventDefault();
     if (description) {
       setIsExpanded(!isExpanded);
     } else if (href) {
@@ -41,14 +41,14 @@ export const ResumeCard = ({
 
   const handleTitleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
+    e.preventDefault();
     if (href) {
       window.open(href, "_blank", "noopener,noreferrer");
     }
   };
 
   return (
-    <Link
-      href={href || "#"}
+    <div
       className="block cursor-pointer transition-transform hover:scale-[1.02] duration-200"
       onClick={handleCardClick}
     >
@@ -134,6 +134,6 @@ export const ResumeCard = ({
           )}
         </div>
       </Card>
-    </Link>
+    </div>
   );
 };
