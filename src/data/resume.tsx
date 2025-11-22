@@ -1,4 +1,5 @@
 import { Icons } from "@/components/Icons";
+import { video } from "framer-motion/client";
 import { Github, HomeIcon } from "lucide-react";
 
 export const DATA = {
@@ -101,6 +102,48 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "Stellar Crypto",
+      href: "https://stellar-crypto.vercel.app/",
+      description:
+        "Responsive Landing Page created for a crypto trading platform.",
+      technologies: ["React", "TailwindCSS", "TypeScript", "Framer Motion"],
+      links: [
+        {
+          type: "Website",
+          href: "https://stellar-crypto.ratishfolio.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ratishjain12/stellar-crypto",
+          icon: <Github className="size-3" />,
+        },
+      ],
+      video:
+        "https://res.cloudinary.com/ratishjaininc/video/upload/v1763794154/stellar-crypto_xgwqjt.mp4",
+    },
+    {
+      title: "Solar Tech",
+      href: "https://solar-tech.ratishfolio.com/",
+      description:
+        "Responsive Landing Page created for a solar technology company.",
+      technologies: ["React", "TailwindCSS", "TypeScript", "Framer Motion"],
+      links: [
+        {
+          type: "Website",
+          href: "https://solar-tech.ratishfolio.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ratishjain12/solar-tech-frontend",
+          icon: <Github className="size-3" />,
+        },
+      ],
+      video:
+        "https://res.cloudinary.com/ratishjaininc/video/upload/v1763794121/solar-tech_grcetb.mp4",
+    },
     {
       title: "Appgen",
       href: "https://www.appgen-cli.com/",
