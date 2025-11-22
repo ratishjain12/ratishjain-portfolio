@@ -122,6 +122,7 @@ export const DATA = {
       ],
       video:
         "https://res.cloudinary.com/ratishjaininc/video/upload/v1763794154/stellar-crypto_xgwqjt.mp4",
+      image: "",
     },
     {
       title: "Solar Tech",
@@ -143,6 +144,7 @@ export const DATA = {
       ],
       video:
         "https://res.cloudinary.com/ratishjaininc/video/upload/v1763794121/solar-tech_grcetb.mp4",
+      image: "",
     },
     {
       title: "Appgen",
