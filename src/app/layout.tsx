@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins } from "@next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import Navbar from "@/components/Navbar";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 
 export const metadata: Metadata = {
   title: "Ratish Jain Portfolio",
@@ -17,7 +10,6 @@ export const metadata: Metadata = {
     title: "Ratish Jain - Software Engineer & Cloud Architect",
     description:
       "Experienced Software Engineer specializing in cloud-native applications",
-    images: ["/profile.jpg"],
   },
 };
 
@@ -28,17 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.className} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
-        >
-          <TooltipProvider>
-            {children}
-            <Navbar />
-          </TooltipProvider>
-        </ThemeProvider>
+      <body
+        className={`${GeistSans.variable} ${GeistMono.variable} font-sans antialiased`}
+      >
+        {children}
       </body>
     </html>
   );

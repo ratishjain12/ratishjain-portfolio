@@ -10,6 +10,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "asset.cloudinary.com",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.hashnode.com",
+      },
     ],
   },
 };

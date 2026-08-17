@@ -52,7 +52,7 @@ export const ResumeCard = ({
       className="block cursor-pointer transition-transform hover:scale-[1.02] duration-200"
       onClick={handleCardClick}
     >
-      <Card className="flex flex-row border transition-colors duration-200 shadow-sm hover:shadow-md">
+      <Card className="flex flex-row border bg-white/[0.02] backdrop-blur-sm transition-colors duration-200 shadow-sm hover:border-violet-500/30 hover:shadow-md hover:shadow-violet-500/5">
         <div className="flex items-center justify-start p-3 sm:p-4 sm:pr-0">
           <Avatar className="border size-12 sm:size-14 md:size-16 bg-muted-background dark:bg-foreground shadow-sm">
             <AvatarImage
@@ -80,8 +80,8 @@ export const ResumeCard = ({
                   {description && (
                     <ChevronRightIcon
                       className={cn(
-                        "size-4 text-muted-foreground transform transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:text-orange-500",
-                        isExpanded ? "rotate-90 text-orange-500" : "rotate-0"
+                        "size-4 text-muted-foreground transform transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:text-violet-400",
+                        isExpanded ? "rotate-90 text-violet-400" : "rotate-0"
                       )}
                     />
                   )}
@@ -91,7 +91,7 @@ export const ResumeCard = ({
                     {badges.map((badge, index) => (
                       <Badge
                         variant="secondary"
-                        className="text-xs px-2 py-1 bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300 border-orange-200 dark:border-orange-800"
+                        className="text-xs px-2 py-1 bg-violet-500/10 text-violet-300 border-violet-500/20"
                         key={index}
                       >
                         {badge}
